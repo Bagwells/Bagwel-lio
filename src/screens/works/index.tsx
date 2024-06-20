@@ -28,21 +28,21 @@ const WorkScreen = () => {
             picture:'/Casa-central.png',
         },
         {
-            id:3,
+            id:4,
             Title:'Jaiye',
             picture:'/Jaiye.png',
         },
         {
-            id:3,
+            id:5,
             Title:'eChannel-Class',
             picture:'/Channel-class.png',
         },
         {
-            id:3,
+            id:6,
             Title:'SkillBit',
-            picture:'/Channel-class.png',
+            picture:'/Skillbit.png',
         },{
-            id:3,
+            id:7,
             Title:'Prud-Foli0',
             picture:'/Prud-Folio.png',
         },
