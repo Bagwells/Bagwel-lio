@@ -26,7 +26,7 @@ const NavBar = (Background:any) => {
   const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
   const X = "https://x.com/dashingtimmy?s=21";
   const Github = "https://www.github.com/bagwells";
-  const Discord = "https://www.discord.com/873643509314363443";
+  const Discord = "https://www.discord.com/users/873643509314363443";
 
 
   const { isOpen, onOpen, onClose } = useDisclosure();
