@@ -68,7 +68,7 @@ const HomeScreen = () => {
                             color={'var(--secColor)'}
                             textAlign={'center'}
                         >
-                            Do you wish to proceed?
+                            Dare to take a leap...
                         </Text>
 
                         <Flex gap={{base:'12px',lg:'20px'}} alignItems={'center'}>

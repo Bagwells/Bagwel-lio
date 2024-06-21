@@ -34,7 +34,7 @@ const ContactScreen = () => {
                     >
                         Contact
                     </Text>
-                    <Flex alignItems="center" gap="12px">
+                    <Flex alignItems="end" gap="12px">
                         <Link href={email} target="_blank" rel="noreferrer noopener"
                             fontSize={{base:'24px',lg:'36px'}} _hover={{fontSize:{base:'28px',lg:"40px"}}} color={'var(--secColor)'} className="transitionlag">
                             <SiMinutemailer />

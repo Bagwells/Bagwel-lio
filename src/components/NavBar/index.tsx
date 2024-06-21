@@ -51,12 +51,12 @@ const NavBar = (Background:any) => {
 
   
   return (
-    <Box position="relative" w="100%" height="auto">
+    <Box position="relative" w="100%" height="fit-content">
       <Box
         as="nav"
         zIndex={90}
-        px={{ base: "1rem", lg: "6rem" }}
-        py={{base:"1rem",lg:"2rem"}}
+        px={{ base: "1em", lg: "6rem" }}
+        py={{base:"12px",lg:"2rem"}}
         bg={"Transparent"}
         color="var(--secColor)"
         w="full"
@@ -101,7 +101,6 @@ const NavBar = (Background:any) => {
                 _active={{ fontWeight: "800" }}
                 fontWeight={`${pathname === "/" ? "800" : "400"}`}
               >
-                
                 Home
               </Text>
             </Box>
