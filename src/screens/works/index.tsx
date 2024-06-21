@@ -88,7 +88,7 @@ const WorkScreen = () => {
                                     >
                                         <SiDailydotdev className="iconSize"/>
                                     </Flex>
-                                    <Text fontSize={'16px'} fontWeight={600} className="Lato">
+                                    <Text fontSize={'16px'} fontWeight={600} color={'TextCol2'} className="Lato">
                                         {entry?.Title}
                                     </Text>
                                 </Flex>
