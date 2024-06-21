@@ -52,12 +52,12 @@ const WorkScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} height={{base:'100vh',lg:'100vh'}}
+                width={'100vw'} minHeight={{base:'100vh',lg:'100vh'}}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
                 py={{base:'5rem',lg:'6em'}} gap={'24px'}
             >
                 <Flex w="100%" 
-                    alignItems="center" justifyContent="space-between"
+                    alignItems="end" justifyContent="space-between"
                 >
                     <Text fontSize={{base:"24px", lg:"40px"}}
                         fontWeight={700} color={'var(--secColor)'}
@@ -79,7 +79,7 @@ const WorkScreen = () => {
                                 w={'100%'} my={'1em'} overflow={'clip'} h={'220px'}
                             >
                                 <img src={`${entry?.picture}`} alt="" className="work"/>
-                                <Flex position={'absolute'} inset={0} alignSelf={'flex-end'} pr={'1em'} m={'12px'} bgColor={'var(--Backgroundlite)'} backdropFilter={'blur(5px)'} w={'fit-content'}
+                                <Flex position={'absolute'} inset={0} alignSelf={'flex-end'} pr={'1em'} m={'12px'} backdropFilter={'blur(5px)'} w={'fit-content'}
                                     alignItems="center" gap={'8px'} overflow={'hidden'}>
                                     <Flex alignItems="center" p={'8px'} 
                                         border={'1px solid var(--secColor)'} 
@@ -109,7 +109,7 @@ const WorkScreen = () => {
                                     border={'2px solid var(--TextCol)'} borderRadius={'12px'}
                                     className="Lato card" overflow={'hidden'}
                                 >
-                                    <Flex bg={"rgba(14 15 17 0.15)!important"}
+                                    <Flex bgColor={"var(--Backgroundlite)"}
                                         w={'100%'} h={'100%'}
                                         alignItems={'flex-end'}
                                         borderRadius={'12px'} className="innercard"
@@ -123,7 +123,7 @@ const WorkScreen = () => {
                                             >
                                                 <SiDailydotdev className="iconSize"/>
                                             </Flex>
-                                            <Text fontSize={'24px'} fontWeight={600} className="Lato title">
+                                            <Text fontSize={'24px'} fontWeight={600} color={'var(--TextCol2)'} className="Lato title">
                                                 {entry?.Title}
                                             </Text>
                                         </Flex>

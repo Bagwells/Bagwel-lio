@@ -95,7 +95,7 @@ const AboutScreen = () => {
                 py={{base:'5rem',lg:'6em'}} gap={'2em'}
             >
                 <Flex w="100%"
-                    alignItems="center" justifyContent="space-between"
+                    alignItems="end" justifyContent="space-between"
                 >
                     <Text fontSize={{base:"32px", lg:"48px"}}
                         fontWeight={700} color={'var(--secColor)'}
