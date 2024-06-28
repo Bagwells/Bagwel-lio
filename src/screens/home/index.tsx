@@ -36,10 +36,10 @@ const HomeScreen = () => {
 
 
 
-    const LinkedIn = "";
-    const X = "";
-    const Github = "";
-    const Discord = "";
+    const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
+    const X = "https://x.com/dashingtimmy?s=21";
+    const Github = "https://www.github.com/bagwells";
+    const Discord = "https://www.discord.com/users/873643509314363443";
 
     const text = "<>"
     const text2 = "</>"
@@ -48,7 +48,7 @@ const HomeScreen = () => {
         <>
             <Box 
                 bg={'var(--Background)'}
-                width={'100vw'} height={'100vh'}
+                width={'100vw'} minHeight={'100vh'}
                 className="Ojuju"
             >
                 <Flex display={`${display ? "none" : "flex"}`}>
@@ -92,7 +92,7 @@ const HomeScreen = () => {
 
                     <Box position={'relative'}
                         bg={'var(--Background)'}
-                        w={'100vw'} h={'100vh'}
+                        w={'100vw'} h={'100vh'} py={{base:'2em', lg:'4em'}}
                         className="Ojuju"
                     >
                         
@@ -109,7 +109,7 @@ const HomeScreen = () => {
                                 />
                             </Flex>
                             <Flex alignItems={'center'}
-                                gap={'10px'} 
+                                gap={'10px'} zIndex={50}
                             >
                                 <Link href={Github}>
                                     <FaSquareGithub className={`${activate ? "icon dropShadow":"unIcon"} rotateback`}/>
@@ -127,19 +127,20 @@ const HomeScreen = () => {
 
                         </Flex>
 
-                        <Flex direction={{base:'column',lg:'row'}}
+                        <Flex direction={{base:'column',xl:'row'}}
                             w={'100%'} h={'100%'} alignItems={'center'}
                             p={{base:'1rem',lg:'10em'}} justifyContent={'center'}
                             gap={{base:'24px',lg:'60px'}}
                         >
                             <Flex flexBasis={1} alignItems={'center'} justifyContent={'center'}>
-                                <Box className="box" overflow={"hidden"}
-                                    w={{base:'260px', sm:'400px', lg:'500px'}}
-                                    h={{base:'260px', sm:'400px',lg:'500px'}}
-                                    border={'2px solid var(--secColor)'} borderRadius={'12px'}
+                                <Box className="box" overflow={"hidden"} bgImage={'/Home.png'} bgPos={'center'}
+                                    bgSize={'cover'}
+                                    w={{base:'240px', sm:'300px', lg:'500px'}}
+                                    h={{base:'300px', sm:'400px', lg:'500px'}}
+                                    border={'4px solid var(--secColor)'} borderRadius={'12px'}
                                 >
-                                    <Image
-                                        src="/Home.png" alt={""} width={500} height={500} layout="responsive"/>
+                                    <Box w={'100%'} h={'100%'} backdropFilter={'grayscale(100%)'}/>
+                                    
                                 </Box>
                             </Flex>
                             <Flex flexDir={"column"} alignItems={{base:'center',lg:'start'}} flexBasis={1} gap={8}
