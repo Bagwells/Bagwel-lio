@@ -249,17 +249,17 @@ const NavBar = (Background:any) => {
                 </Link>
               </Box>
 
-              <Flex w="100%" justifyContent={'center'} alignItems="center" px={4} gap={"20px"} mt={'32px'}>
-                <Link href={Github} target="_blank" rel="noreferrer noopener">
+              <Flex w="100%" justifyContent={'center'} alignItems="center" px={4} gap={"20px"} mt={'32px'}> 
+                <Link href={Github} target="_blank" rel="noreferrer noopener" className="white">
                   <VscGithub />
                 </Link>
-                <Link href={X} target="_blank" rel="noreferrer noopener">
+                <Link href={X} target="_blank" rel="noreferrer noopener" className="white">
                   <BsTwitter />
                 </Link>
-                <Link href={LinkedIn} target="_blank" rel="noreferrer noopener">
+                <Link href={LinkedIn} target="_blank" rel="noreferrer noopener" className="white">
                   <FiLinkedin />
                 </Link>
-                <Link href={Discord} target="_blank" rel="noreferrer noopener">
+                <Link href={Discord} target="_blank" rel="noreferrer noopener" className="white">
                     <FaDiscord />
                 </Link>
               </Flex>
