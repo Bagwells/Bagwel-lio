@@ -151,7 +151,7 @@ const AboutScreen = () => {
                             <Text fontSize={{base:"20px", lg:"24px"}}
                                 fontWeight={700} color={'var(--secColor)'}
                             >
-                                Skills
+                                Inventory
                             </Text>
                             <Flex flexDir={'column'} gap={'12px'}>
                                 {   XP.map((entry)=>(
