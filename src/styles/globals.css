@@ -26,6 +26,10 @@
     width: 2px;
   }
  
+  .white{
+    color: #FFFFFF;
+    font-size: 20px;
+  }
 
 .work{
     width: 100vw;
