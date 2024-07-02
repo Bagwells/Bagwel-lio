@@ -1,11 +1,12 @@
 "use client"
 import NavBar from "@/components/NavBar";
 import { Flex, Box, Text, Button, background } from "@chakra-ui/react"
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { PiCaretDoubleUpBold, PiCaretDoubleLeftBold, PiCaretDoubleRightBold  } from "react-icons/pi";
 import { FaDiscord, FaLinkedin, FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
+import { BiLoaderCircle } from "react-icons/bi";
 
 
 const HomeScreen = () => {
@@ -15,6 +16,7 @@ const HomeScreen = () => {
     const [translate, setIsTranslate] = useState(true);
     const [activate , setActivate ] = useState(false);
     const [transition , setTransition] = useState(false);
+    const [isLoad , setLoad] = useState(true);
 
     const switchDisplay =()=> {
 
@@ -34,7 +36,12 @@ const HomeScreen = () => {
         },1500)
     }
 
+    useEffect(()=>{
 
+        setTimeout(()=>{
+            setLoad(false);
+        },3000)
+    },[])
 
     const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
     const X = "https://x.com/dashingtimmy?s=21";
@@ -139,7 +146,13 @@ const HomeScreen = () => {
                                     h={{base:'300px', sm:'400px', lg:'500px'}}
                                     border={'4px solid var(--secColor)'} borderRadius={'12px'}
                                 >
-                                    <Box w={'100%'} h={'100%'} backdropFilter={'grayscale(100%)'}/>
+                                    {   isLoad ? 
+                                        <Box display="flex" bg={'var(--Background)'} w={'100%'} h={'100%'} alignItems={'center'} justifyContent={'center'}>
+                                            <BiLoaderCircle className="loader"/>
+                                        </Box>
+                                        :
+                                        <Box w={'100%'} h={'100%'} backdropFilter={'grayscale(100%)'}/>
+                                    }
                                     
                                 </Box>
                             </Flex>
