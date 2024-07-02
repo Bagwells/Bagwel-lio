@@ -159,12 +159,12 @@ const AboutScreen = () => {
                                         flexDir={'column'} w={'100%'} gap={'8px'} py={'8px'}
                                     >
                                         <Flex w={'100%'} alignItems="center" justifyContent={'space-between'}>
-                                            <Text fontSize={{base:'14px',lg:'16px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
+                                            <Text fontSize={{base:'14px',lg:'20px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
                                                 {entry?.skill}
                                             </Text>
-                                            <Text fontSize={{base:'12px',lg:'14px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
+                                            <Text fontSize={{base:'12px',lg:'18px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
                                                 {entry?.value}
-                                                <Text as="span" fontSize={'14px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">xp</Text>
+                                                <Text as="span" fontSize={'16px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">xp</Text>
                                             </Text>
                                         </Flex>
                                         <Flex position={'relative'} bg={'var(--TextCol)'} borderRadius={'2px'}
