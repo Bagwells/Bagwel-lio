@@ -51,20 +51,20 @@ const AboutScreen = () => {
         {
             id: 6,
             skill:'Vue',
-            translate:"fifty",
-            value:50
+            translate:"forty",
+            value:40
         },
         {
             id: 7,
             skill:'React Native',
-            translate:"fifty",
-            value:50
+            translate:"forty",
+            value:40
         },
         {
             id: 8,
             skill:'Figma',
-            translate:"sixty",
-            value:60
+            translate:"fifty",
+            value:50
         },
         {
             id: 9,
@@ -75,7 +75,7 @@ const AboutScreen = () => {
     ]
 
     const resumeDownload =()=> {
-        const resumeUrl = "/Resume.pdf";
+        const resumeUrl = "/Timmy-resume.pdf";
         const link = document.createElement("a");
         link.href = resumeUrl;
         link.download = "Resume.pdf";
@@ -90,7 +90,7 @@ const AboutScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} height={{lg:'100vh'}}
+                width={'100vw'} minH={'100vh'}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
                 py={{base:'5rem',lg:'6em'}} gap={'2em'}
             >
@@ -110,7 +110,7 @@ const AboutScreen = () => {
                 <Flex w={'100%'} h={'100%'} flexDirection="column" py={'1em'}>
                     <Flex flexDir={{base:'column', lg:'row'}} justifyContent={'space-between'} px={{base:'4px',lg:'16px'}} gap={{base:4, lg:20}}>
                         <Flex w={{base:'100%',lg:'40%'}} justifyContent={'center'} flexDir={'column'} gap={'12px'} py={'1em'}>
-                            <Text fontSize={{base:'14px',lg:'14px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl:"20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
@@ -119,14 +119,14 @@ const AboutScreen = () => {
                                 websites. With expertise in HTML, CSS, JavaScript, and various frameworks, I make your designs a reality
                                 ensure a smooth path for users. 
                             </Text>
-                            <Text fontSize={{base:'14px',lg:'16px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
                                 Passionate about staying up-to-date with industry trends and best practices, I strive to improve my skills and deliver
                                 high quality solutions that exceeds expectations and fully adaptive to any technology and ecosystem. 
                             </Text>
-                            <Text fontSize={{base:'14px',lg:'16px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
@@ -159,12 +159,12 @@ const AboutScreen = () => {
                                         flexDir={'column'} w={'100%'} gap={'8px'} py={'8px'}
                                     >
                                         <Flex w={'100%'} alignItems="center" justifyContent={'space-between'}>
-                                            <Text fontSize={{base:'14px',lg:'16px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
+                                            <Text fontSize={{base:'14px',lg:'20px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
                                                 {entry?.skill}
                                             </Text>
-                                            <Text fontSize={{base:'12px',lg:'14px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
+                                            <Text fontSize={{base:'12px',lg:'18px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
                                                 {entry?.value}
-                                                <Text as="span" fontSize={'14px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">xp</Text>
+                                                <Text as="span" fontSize={'16px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">xp</Text>
                                             </Text>
                                         </Flex>
                                         <Flex position={'relative'} bg={'var(--TextCol)'} borderRadius={'2px'}
