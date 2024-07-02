@@ -51,20 +51,20 @@ const AboutScreen = () => {
         {
             id: 6,
             skill:'Vue',
-            translate:"fifty",
-            value:50
+            translate:"forty",
+            value:40
         },
         {
             id: 7,
             skill:'React Native',
-            translate:"fifty",
-            value:50
+            translate:"forty",
+            value:40
         },
         {
             id: 8,
             skill:'Figma',
-            translate:"sixty",
-            value:60
+            translate:"fifty",
+            value:50
         },
         {
             id: 9,
@@ -75,7 +75,7 @@ const AboutScreen = () => {
     ]
 
     const resumeDownload =()=> {
-        const resumeUrl = "/Resume.pdf";
+        const resumeUrl = "/Timmy-resume.pdf";
         const link = document.createElement("a");
         link.href = resumeUrl;
         link.download = "Resume.pdf";
@@ -90,7 +90,7 @@ const AboutScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} height={{lg:'100vh'}}
+                width={'100vw'} minH={'100vh'}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
                 py={{base:'5rem',lg:'6em'}} gap={'2em'}
             >

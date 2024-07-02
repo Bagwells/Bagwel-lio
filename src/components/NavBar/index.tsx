@@ -56,7 +56,7 @@ const NavBar = (Background:any) => {
         as="nav"
         zIndex={90}
         px={{ base: "1em", lg: "6rem" }}
-        py={{base:"12px",lg:"2rem"}}
+        py={{base:"12px",lg:"20px"}}
         bg={"Transparent"}
         color="var(--secColor)"
         w="full"
@@ -99,6 +99,7 @@ const NavBar = (Background:any) => {
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
+                _hover={{ fontWeight: "800" }}
                 fontWeight={`${pathname === "/" ? "800" : "400"}`}
               >
                 Home
@@ -112,6 +113,7 @@ const NavBar = (Background:any) => {
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
+                _hover={{ fontWeight: "800" }}
                 fontWeight={`${pathname === "/about" ? "800" : "400"}`}
               >
                 
@@ -126,6 +128,7 @@ const NavBar = (Background:any) => {
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
+                _hover={{ fontWeight: "800" }}
                 fontWeight={`${pathname === "/works" ? "800" : "400"}`}
               >
                 
@@ -140,6 +143,7 @@ const NavBar = (Background:any) => {
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
+                _hover={{ fontWeight: "800" }}
                 fontWeight={`${pathname === "/contact" ? "800" : "400"}`}
               >
                 Contact Me
@@ -199,6 +203,7 @@ const NavBar = (Background:any) => {
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
+                      _hover={{ fontWeight: "800" }}
                       fontWeight={`${pathname === "/" ? "800" : "400"}`}
                     >
                       
@@ -213,6 +218,7 @@ const NavBar = (Background:any) => {
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
+                      _hover={{ fontWeight: "800" }}
                       fontWeight={`${pathname === "/about" ? "800" : "400"}`}
                     >
                       
@@ -227,6 +233,7 @@ const NavBar = (Background:any) => {
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
+                      _hover={{ fontWeight: "800" }}
                       fontWeight={`${pathname === "/works" ? "800" : "400"}`}
                     >
                       
@@ -241,6 +248,7 @@ const NavBar = (Background:any) => {
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
+                      _hover={{ fontWeight: "800" }}
                       fontWeight={`${pathname === "/contact" ? "800" : "400"}`}
                     >
                       Contact Me
