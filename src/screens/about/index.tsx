@@ -110,7 +110,7 @@ const AboutScreen = () => {
                 <Flex w={'100%'} h={'100%'} flexDirection="column" py={'1em'}>
                     <Flex flexDir={{base:'column', lg:'row'}} justifyContent={'space-between'} px={{base:'4px',lg:'16px'}} gap={{base:4, lg:20}}>
                         <Flex w={{base:'100%',lg:'40%'}} justifyContent={'center'} flexDir={'column'} gap={'12px'} py={'1em'}>
-                            <Text fontSize={{base:'14px',lg:'14px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl:"20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
@@ -119,14 +119,14 @@ const AboutScreen = () => {
                                 websites. With expertise in HTML, CSS, JavaScript, and various frameworks, I make your designs a reality
                                 ensure a smooth path for users. 
                             </Text>
-                            <Text fontSize={{base:'14px',lg:'16px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
                                 Passionate about staying up-to-date with industry trends and best practices, I strive to improve my skills and deliver
                                 high quality solutions that exceeds expectations and fully adaptive to any technology and ecosystem. 
                             </Text>
-                            <Text fontSize={{base:'14px',lg:'16px'}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
