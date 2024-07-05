@@ -79,7 +79,7 @@ const WorkScreen = () => {
                                 w={'100%'} my={'1em'} overflow={'clip'} h={'220px'}
                             >
                                 <img src={`${entry?.picture}`} alt="" className="work"/>
-                                <Flex position={'absolute'} inset={0} alignSelf={'flex-end'} pr={'1em'} m={'12px'} backdropFilter={'blur(5px)'} w={'fit-content'}
+                                <Flex position={'absolute'} inset={0} alignSelf={'flex-end'} pr={'1em'} m={'12px'} bg={'#00000080'} backdropFilter={'blur(5px)'} w={'fit-content'} h={'max-content'}
                                     alignItems="center" gap={'8px'} overflow={'hidden'}>
                                     <Flex alignItems="center" p={'8px'} 
                                         border={'1px solid var(--secColor)'} 
@@ -88,7 +88,7 @@ const WorkScreen = () => {
                                     >
                                         <SiDailydotdev className="iconSize"/>
                                     </Flex>
-                                    <Text fontSize={'16px'} fontWeight={600} color={'TextCol2'} className="Lato">
+                                    <Text fontSize={'16px'} fontWeight={600} color={'var(--TextCol2)'} className="Lato">
                                         {entry?.Title}
                                     </Text>
                                 </Flex>
