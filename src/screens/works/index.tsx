@@ -79,7 +79,7 @@ const WorkScreen = () => {
                                 w={'100%'} my={'1em'} overflow={'clip'} h={'220px'}
                             >
                                 <img src={`${entry?.picture}`} alt="" className="work"/>
-                                <Flex position={'absolute'} inset={0} alignSelf={'flex-end'} pr={'1em'} m={'12px'} bg={'#00000080'} backdropFilter={'blur(5px)'} w={'fit-content'} h={'max-content'}
+                                <Flex position={'absolute'} inset={0} alignSelf={'end'} pr={'1em'} m={'12px'} bg={'#00000080'} backdropFilter={'blur(5px)'} w={'fit-content'} h={'max-content'}
                                     alignItems="center" gap={'8px'} overflow={'hidden'}>
                                     <Flex alignItems="center" p={'8px'} 
                                         border={'1px solid var(--secColor)'} 
