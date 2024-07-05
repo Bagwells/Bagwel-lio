@@ -74,7 +74,7 @@ const WorkScreen = () => {
                         overflow={'auto'} borderTop={'2px solid var(--TextCol)'} borderBottom={'2px solid var(--TextCol)'}
                     >   
                         { work?.map((entry)=>(
-                            <Box position={'relative'}
+                            <Box position={'relative'} display={'flex'}
                                 key={entry?.id} border={'2px solid var(--secColor)'} borderRadius={'12px'}
                                 w={'100%'} my={'1em'} overflow={'clip'} h={'220px'}
                             >
