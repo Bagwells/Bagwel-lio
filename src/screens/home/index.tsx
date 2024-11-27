@@ -246,7 +246,7 @@ const HomeScreen = () => {
                                         developer
                                     </Text>
                                 </Flex>
-                                <Link href={'/about'}>
+                                <Link href={'/inventory'}>
                                     <Button onMouseEnter={activateGlow} onMouseLeave={activateGlow}
                                          display={'flex'} alignItems={'center'}
                                         bg={'var(--secColor)'} color={'var(--Background)'} fontSize={{base:'16px',lg:'24px'}} fontWeight={500} borderRadius={'12px'}
