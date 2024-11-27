@@ -21,6 +21,8 @@ import { GrContactInfo } from "react-icons/gr";
 import { IoMdCodeWorking } from "react-icons/io";
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa6";
+import { SiBattledotnet } from "react-icons/si";
+import { MdInventory, MdWorkspacesFilled } from "react-icons/md";
 
 const NavBar = (Background:any) => {
   const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
@@ -67,7 +69,7 @@ const NavBar = (Background:any) => {
         fontSize="1.25rem"
         lineHeight="1.5em"
         position="fixed"
-        backdropFilter={"blur(5px)"}
+        backdropFilter={"blur(10px)"}
         top={0}
         right={0}
         left={0}
@@ -106,33 +108,33 @@ const NavBar = (Background:any) => {
               </Text>
             </Box>
           </Link>
-          <Link href="/about">
+          <Link href="/inventory">
             <Box display={'flex'} alignItems={'center'} gap={'4px'}>
-                <TbWorldCode className={`${pathname === "/about" ? "NavIcon":"unNavIcon"} `}/>
+                <MdInventory className={`${pathname === "/inventory" ? "NavIcon":"unNavIcon"} `}/>
               <Text
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
                 _hover={{ fontWeight: "800" }}
-                fontWeight={`${pathname === "/about" ? "800" : "400"}`}
+                fontWeight={`${pathname === "/inventory" ? "800" : "400"}`}
               >
                 
-                My World
+                Inventory
               </Text>
             </Box>
           </Link>
-          <Link href="/works">
+          <Link href="/xp">
             <Box display={'flex'} alignItems={'center'} gap={'4px'}>
-                <IoMdCodeWorking className={`${pathname === "/works" ? "NavIcon":"unNavIcon"} `}/>
+                <MdWorkspacesFilled className={`${pathname === "/xp" ? "NavIcon":"unNavIcon"} `}/>
               <Text
                 fontSize="17"
                 color="var(--secColor)"
                 _active={{ fontWeight: "800" }}
                 _hover={{ fontWeight: "800" }}
-                fontWeight={`${pathname === "/works" ? "800" : "400"}`}
+                fontWeight={`${pathname === "/xp" ? "800" : "400"}`}
               >
                 
-                Works
+                XP
               </Text>
             </Box>
           </Link>
@@ -173,7 +175,7 @@ const NavBar = (Background:any) => {
             height={"100vh"}
             width={"100vw"}
             gap={20}
-            py={"10em"}
+            py={"4rem"}
           >
            
             <DrawerCloseButton
@@ -186,6 +188,9 @@ const NavBar = (Background:any) => {
             />
 
             <DrawerBody>
+              <Flex w={'100%'} justifyContent={'center'} textColor={'var(--secColor)'} fontSize={'48px'} my={'4rem'}>
+                <SiBattledotnet/>
+              </Flex>
               <Box w={'100%'}
                 display={"flex"}
                 flexDir={"column"} alignItems={'center'}
@@ -211,33 +216,33 @@ const NavBar = (Background:any) => {
                     </Text>
                   </Box>
                 </Link>
-                <Link href="/about" onClick={onClose}>
+                <Link href="/inventory" onClick={onClose}>
                   <Box display={'flex'} alignItems={'center'} gap={'4px'}>
-                      <TbWorldCode className={`${pathname === "/about" ? "NavIcon":"unNavIcon"} `}/>
+                      <MdInventory className={`${pathname === "/inventory" ? "NavIcon":"unNavIcon"} `}/>
                     <Text
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
                       _hover={{ fontWeight: "800" }}
-                      fontWeight={`${pathname === "/about" ? "800" : "400"}`}
+                      fontWeight={`${pathname === "/inventory" ? "800" : "400"}`}
                     >
                       
-                      My World
+                      Inventory
                     </Text>
                   </Box>
                 </Link>
-                <Link href="/works" onClick={onClose}>
+                <Link href="/xp" onClick={onClose}>
                   <Box display={'flex'} alignItems={'center'} gap={'4px'}>
-                      <IoMdCodeWorking className={`${pathname === "/works" ? "NavIcon":"unNavIcon"} `}/>
+                      <MdWorkspacesFilled className={`${pathname === "/xp" ? "NavIcon":"unNavIcon"} `}/>
                     <Text
                       fontSize="17"
                       color="var(--secColor)"
                       _active={{ fontWeight: "800" }}
                       _hover={{ fontWeight: "800" }}
-                      fontWeight={`${pathname === "/works" ? "800" : "400"}`}
+                      fontWeight={`${pathname === "/xp" ? "800" : "400"}`}
                     >
                       
-                      Works
+                      XP
                     </Text>
                   </Box>
                 </Link>
@@ -271,6 +276,7 @@ const NavBar = (Background:any) => {
                     <FaDiscord />
                 </Link>
               </Flex>
+
             </DrawerBody>
           </DrawerContent>
         </Drawer>

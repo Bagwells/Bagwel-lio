@@ -3,6 +3,7 @@ import { Box, Center, Flex, Link, Text } from "@chakra-ui/react"
 import Image from "next/image"
 import { FaDiscord, FaLinkedin, FaSquareGithub, FaSquareXTwitter, FaXTwitter } from "react-icons/fa6"
 import { SiMinutemailer } from "react-icons/si"
+import { TbSocial } from "react-icons/tb"
 
 
 
@@ -23,8 +24,8 @@ const ContactScreen = () => {
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
                 width={'100vw'} minH={{base:'100vh',lg:'100vh'}}
-                className="Ojuju"  p={{base:'1rem',lg:'8em'}}
-                py={{base:'5rem',lg:'6em'}} gap={'24px'}
+                className="Ojuju"  px={{base:'1rem',lg:'6em'}}
+                py={{base:'5rem', lg:'6rem'}} gap={'24px'}
             >
                 <Flex w="100%" 
                     alignItems="center" justifyContent="space-between"
@@ -46,16 +47,21 @@ const ContactScreen = () => {
                     </Flex>
                 </Flex>
                 
-                <Flex bg={'cover'} bgPos={'center'} w={'100%'} h={'100%'} 
-                    direction={'column'} mt={{base:'4em',lgg:'5em'}} justifyContent={{base:'',lg:'center'}} alignItems={'center'}
+                <Flex
+                    direction={'column'} mt={{base:'4em',lg:'5em'}} justifyContent={{base:'',lg:'center'}} alignItems={'center'}
                 >
-                     <Flex direction={{base:'column'}} maxW={'500px'} bg={'transparent'}  borderRadius={'12px'}
+                    <Flex direction={{base:'column'}} maxW={'1200px'} bg={'transparent'}  borderRadius={'12px'}
                         border={'2px solid var(--secColor)'} p={{base:'8px',md:'24px'}} py={{base:'24px'}}gap={'24px'}
                     >
-                        <Box w={'fit-content'} >
-                            <Image src="/Neon.png" alt="" width={1000} height={1000}
+                        <Flex w={'100%'} justifyContent={'space-between'}>
+                            <Box w={'fit-content'} fontSize={'80px'} textColor={'var(--secColor)'} >
+                                <TbSocial />
+                            </Box>
+                            <Image src={"/Illustration.png"} alt={""}   
+                                width={200} height={200}
                             />
-                        </Box>
+                        </Flex>
+                        
                         <Flex direction={'column'} justifyContent={'space-between'}
                             p={{base:'8px',md:'24px'}} 
                         >
