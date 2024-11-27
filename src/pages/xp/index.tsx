@@ -1,8 +1,8 @@
 import WorkScreen from "@/screens/works";
 
 
-const Work = () => {
+const XP = () => {
     return <WorkScreen/>;
 }
  
-export default Work;
+export default XP;

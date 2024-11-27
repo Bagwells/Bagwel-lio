@@ -1,7 +1,7 @@
 import AboutScreen from "@/screens/about";
 
-const About = () => {
+const Inventory = () => {
     return <AboutScreen/>;
 }
  
-export default About;
+export default Inventory;

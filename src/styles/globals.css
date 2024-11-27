@@ -226,3 +226,28 @@
     }
 }
 
+.typewriter {
+    color: #0CF5E9;
+}
+
+
+  
+#typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(40) infinite;
+}
+  
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

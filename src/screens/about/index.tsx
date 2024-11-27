@@ -33,14 +33,14 @@ const AboutScreen = () => {
         {
             id:3,
             skill:'JavaScript',
-            translate:"eighty",
-            value: 80
+            translate:"ninety",
+            value: 90
         },
         {
             id:4,
             skill:'TypeScript',
-            translate:"seventy",
-            value: 70
+            translate:"eighty",
+            value: 80
         },
         {
             id: 5,
@@ -57,14 +57,14 @@ const AboutScreen = () => {
         {
             id: 7,
             skill:'React Native',
-            translate:"forty",
-            value:40
+            translate:"fifty",
+            value:50
         },
         {
             id: 8,
             skill:'Figma',
-            translate:"fifty",
-            value:50
+            translate:"eighty",
+            value:70
         },
         {
             id: 9,
@@ -90,7 +90,7 @@ const AboutScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} minH={'100vh'}
+                width={'100vw'} h={{base:'', xl:'100vh'}}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
                 py={{base:'5rem',lg:'6em'}} gap={'2em'}
             >
@@ -100,7 +100,7 @@ const AboutScreen = () => {
                     <Text fontSize={{base:"32px", lg:"48px"}}
                         fontWeight={700} color={'var(--secColor)'}
                     >
-                        About me
+                        Inventory
                     </Text>
                     <Link href={LinkedIn} target="_blank" rel="noreferrer noopener"
                         fontSize={'42px'} _hover={{fontSize:"48px"}} color={'var(--secColor)'} className="transitionlag">
@@ -151,7 +151,7 @@ const AboutScreen = () => {
                             <Text fontSize={{base:"20px", lg:"24px"}}
                                 fontWeight={700} color={'var(--secColor)'}
                             >
-                                Inventory
+                                Skills
                             </Text>
                             <Flex flexDir={'column'} gap={'12px'}>
                                 {   XP.map((entry)=>(
@@ -164,7 +164,7 @@ const AboutScreen = () => {
                                             </Text>
                                             <Text fontSize={{base:'12px',lg:'18px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">
                                                 {entry?.value}
-                                                <Text as="span" fontSize={'16px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">xp</Text>
+                                                <Text as="span" fontSize={'16px'} color={'var(--TextCol)'} fontWeight={500} className="Ojuju">points</Text>
                                             </Text>
                                         </Flex>
                                         <Flex position={'relative'} bg={'var(--TextCol)'} borderRadius={'2px'}
