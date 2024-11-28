@@ -175,7 +175,7 @@ const NavBar = (Background:any) => {
             height={"100vh"}
             width={"100vw"}
             gap={20}
-            py={"4rem"}
+            py={"2rem"}
           >
            
             <DrawerCloseButton
@@ -188,7 +188,7 @@ const NavBar = (Background:any) => {
             />
 
             <DrawerBody>
-              <Flex w={'100%'} justifyContent={'center'} textColor={'var(--secColor)'} fontSize={'48px'} my={'4rem'}>
+              <Flex w={'100%'} justifyContent={'center'} textColor={'var(--secColor)'} fontSize={'48px'} my={'1rem'}>
                 <SiBattledotnet/>
               </Flex>
               <Box w={'100%'}
@@ -226,7 +226,6 @@ const NavBar = (Background:any) => {
                       _hover={{ fontWeight: "800" }}
                       fontWeight={`${pathname === "/inventory" ? "800" : "400"}`}
                     >
-                      
                       Inventory
                     </Text>
                   </Box>

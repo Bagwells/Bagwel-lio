@@ -90,14 +90,14 @@ const AboutScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} h={{base:'', xl:'100vh'}}
-                className="Ojuju"  p={{base:'1rem',lg:'8em'}}
-                py={{base:'5rem',lg:'6em'}} gap={'2em'}
+                width={'100vw'} minH={{base:'', xl:'100vh'}}
+                className="Ojuju"  p={{base:'1rem', lg:'6rem', xl:'8rem'}}
+                py={{base:'4.8rem', xl:'6rem'}} gap={'1rem'}
             >
                 <Flex w="100%"
                     alignItems="end" justifyContent="space-between"
                 >
-                    <Text fontSize={{base:"32px", lg:"48px"}}
+                    <Text fontSize={{base:"32px", lg:'36px', xl:"48px"}}
                         fontWeight={700} color={'var(--secColor)'}
                     >
                         Inventory
@@ -107,9 +107,9 @@ const AboutScreen = () => {
                         <FaLinkedin />
                     </Link>
                 </Flex>
-                <Flex w={'100%'} h={'100%'} flexDirection="column" py={'1em'}>
+                <Flex w={'100%'} h={'100%'} flexDirection="column">
                     <Flex flexDir={{base:'column', lg:'row'}} justifyContent={'space-between'} px={{base:'4px',lg:'16px'}} gap={{base:4, lg:20}}>
-                        <Flex w={{base:'100%',lg:'40%'}} justifyContent={'center'} flexDir={'column'} gap={'12px'} py={'1em'}>
+                        <Flex w={{base:'100%',lg:'40%'}} justifyContent={'center'} flexDir={'column'} gap={'12px'}>
                             <Text fontSize={{base:'14px',lg:'16px', xl:"20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
@@ -126,7 +126,7 @@ const AboutScreen = () => {
                                 Passionate about staying up-to-date with industry trends and best practices, I strive to improve my skills and deliver
                                 high quality solutions that exceeds expectations and fully adaptive to any technology and ecosystem. 
                             </Text>
-                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
+                            <Text fontSize={{base:'14px',lg:'16px', xl:"20px"}}
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
@@ -156,7 +156,7 @@ const AboutScreen = () => {
                             <Flex flexDir={'column'} gap={'12px'}>
                                 {   XP.map((entry)=>(
                                     <Flex key={entry?.id}
-                                        flexDir={'column'} w={'100%'} gap={'8px'} py={'8px'}
+                                        flexDir={'column'} w={'100%'} gap={'8px'} py={'6px'}
                                     >
                                         <Flex w={'100%'} alignItems="center" justifyContent={'space-between'}>
                                             <Text fontSize={{base:'14px',lg:'20px'}} fontWeight={600} color={'var(--secColor)'} className="Lato">

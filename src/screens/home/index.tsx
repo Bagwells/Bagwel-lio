@@ -44,15 +44,15 @@ const HomeScreen = () => {
           }
         };
         typewriter();
-        sessionStorage.setItem('display', JSON.stringify(display))
-        const value = sessionStorage.getItem('display');
-        console.log(value)
-        if(value) {
-            setDisplay(false)
-        } else{ 
-            switchDisplay()
-        }
-        
+        // sessionStorage.setItem('display', JSON.stringify(display))
+        // const value = sessionStorage.getItem('display');
+        // console.log(value)
+        // if(value) {
+        //     setDisplay(false)
+        // } else{ 
+        //     switchDisplay()
+        // }
+        switchDisplay()
     }, []);
     
       
@@ -148,7 +148,7 @@ const HomeScreen = () => {
                         className="Ojuju"
                     >
                         <Flex position={'fixed'} zIndex={50}
-                            alignItems={'center'} top={{base:200, lg:300}} left={{base:-130, md:'-180', xl:-200}}
+                            alignItems={'center'} top={{base:200, lg:300}} left={{base:-145, md:'-180', xl:-200}}
                             w={'fit-content'} gap={'10px'} className="rotate"
                         >
                             <Flex position={'relative'} bg={'var(--TextCol)'} borderRadius={'2px'}
@@ -184,10 +184,10 @@ const HomeScreen = () => {
                             py={{base:'2rem', lg:'10rem'}}
                         >
                             <Flex width={{base:'100%',lg:'50%'}} alignItems={'center'} justifyContent={'center'}>
-                                <Box display={{base:'flex', lg:'none'}} w={'100%'}>
+                                <Box display={{base:'flex', md:'none'}} w={'100%'}>
                                     <Image src={'/Illustration-.png'} alt="" width={500} height={500} />
                                 </Box>
-                                <Flex display={{base:'none', lg:'flex'}} w={'100%'}>
+                                <Flex display={{base:'none', md:'flex'}} w={'100%'}>
                                     <Image src={'/Illustration-.png'} alt="" width={2000} height={2000}/>
                                 </Flex>
                                 {/* <Box className="box" overflow={"hidden"} bgImage={'/Home.png'} bgPos={'center'}
@@ -209,7 +209,7 @@ const HomeScreen = () => {
                                 px={{base:'',xl:'2em'}}
                             >
                                 <Flex flexDir={'column'} gap={'6px'} textAlign={{base:'center',xl:'start'}}>
-                                    <Text fontSize={{base:'24px', lg:'48px'}} fontWeight={500}
+                                    <Text fontSize={{base:'24px', xl:'48px'}} fontWeight={500}
                                         className="Lato" color={'var(--TextCol)'}
                                     >
                                         Hi, it's me
