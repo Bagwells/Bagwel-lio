@@ -68,7 +68,7 @@ const WorkScreen = () => {
                 bg={'var(--Background)'}
                 width={'100vw'} height={{base:'100vh',lg:'100vh'}}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
-                py={{base:'5rem',lg:'6rem'}} gap={'24px'}
+                py={{base:'5rem',lg:'6rem'}} gap={'12px'}
             >
                 <Flex w="100%" 
                     alignItems="end" justifyContent="space-between"
@@ -99,6 +99,7 @@ const WorkScreen = () => {
                                         border={'1px solid var(--secColor)'} 
                                         justifyContent="center" 
                                         borderRadius={'1000px'}
+                                        className="pulse"
                                     >
                                         <Link href={`${entry?.open}`} target="_blank" rel="noreferrer noopener" cursor={'pointer'}>
                                             <SiDailydotdev className="iconSize"/>
@@ -124,6 +125,7 @@ const WorkScreen = () => {
                                     bgImage={entry?.picture} bgSize={'cover'} bgPos={'center'} 
                                     border={'2px solid var(--TextCol)'} borderRadius={'12px'}
                                     className="Lato card" overflow={'hidden'}
+                                    _hover={{border:'4px solid var(--secColor)'}}
                                 >
                                     <Flex bgColor={"var(--Backgroundlite)"}
                                         w={'100%'} h={'100%'}
@@ -138,7 +140,7 @@ const WorkScreen = () => {
                                                 borderRadius={'1000px'}
                                             >
                                                 <Link href={`${entry?.open}`} target="_blank" rel="noreferrer noopener" cursor={'pointer'}>
-                                                    <SiDailydotdev className="iconSize animate-pulse"/>
+                                                    <SiDailydotdev className="iconSize pulse"/>
                                                 </Link>
                                             </Flex>
                                             <Text fontSize={'24px'} fontWeight={600} color={'var(--TextCol2)'} className="Lato title">
@@ -151,20 +153,20 @@ const WorkScreen = () => {
                         }
                     </Box>
                 </Flex>
-                <Flex alignContent={'center'} gap={'24px'} justifyContent={'center'} mt={{base:'1rem', lg:'2rem', xl:'2rem'}}>
-                    <Flex flexDir={'column'} gap={'8px'} alignItems={'center'}>
+                <Flex alignContent={'center'} gap={'24px'} justifyContent={'center'} mt={{base:'0.5rem', lg:'2rem', xl:'2rem'}}>
+                    <Flex flexDir={'column'} gap={'6px'} alignItems={'center'}>
                         <GrOptimize className="icon"/>
                         <Text fontSize={'16px'} fontWeight={500} color="var(--secColor)" className="Lato">
                             Optimize
                         </Text>
                     </Flex>
-                    <Flex flexDir={'column'} gap={'8px'} alignItems={'center'}>
+                    <Flex flexDir={'column'} gap={'6px'} alignItems={'center'}>
                         <MdOutlineMiscellaneousServices className="icon"/>
                         <Text fontSize={'16px'} fontWeight={500} color="var(--secColor)" className="Lato">
                             Maintenance
                         </Text>
                     </Flex>
-                    <Flex flexDir={'column'} gap={'8px'} alignItems={'center'} >
+                    <Flex flexDir={'column'} gap={'6px'} alignItems={'center'} >
                         <SiSpeedtest className="icon"/>
                         <Text fontSize={'16px'} fontWeight={500} color="var(--secColor)" className="Lato">
                             Fast Service
