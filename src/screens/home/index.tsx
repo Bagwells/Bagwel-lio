@@ -18,11 +18,12 @@ const HomeScreen = () => {
     const [activate , setActivate ] = useState<boolean>(false);
     const [transition , setTransition] = useState<boolean>(false);
     const [isLoad , setLoad] = useState<boolean>(true);
+    
 
 
     const text = "Initializing...";
     
-
+    const [value, setValue] = useState<boolean>(false)
 
     const typewriterText = useRef<HTMLDivElement>(null);
     let i = 0;
@@ -30,7 +31,7 @@ const HomeScreen = () => {
     const switchDisplay =()=> {
         setTimeout(()=>{
             setDisplay(false);
-        },2000);
+        },2500);
     }
 
     useEffect(() => {
@@ -44,25 +45,16 @@ const HomeScreen = () => {
           }
         };
         typewriter();
-        // sessionStorage.setItem('display', JSON.stringify(display))
-        // const value = sessionStorage.getItem('display');
-        // console.log(value)
-        // if(value) {
-        //     setDisplay(false)
-        // } else{ 
-        //     switchDisplay()
-        // }
-        switchDisplay()
+        sessionStorage.setItem('value', JSON.stringify(value))
+        const storedValue = sessionStorage.getItem('value');
+        console.log(storedValue)
+        if(storedValue === 'true') {
+            setDisplay(false)
+        } else{ 
+            setValue(true)
+            switchDisplay()
+        }
     }, []);
-    
-      
-    
-    // useEffect(()=>{
-    //     
-    //     if(value){
-    //         
-    //     }
-    // },[])
     
     
 
@@ -258,7 +250,6 @@ const HomeScreen = () => {
                             </Flex>
                         </Flex>
                     </Box>
-
                 }
             </Box>
         </> 
