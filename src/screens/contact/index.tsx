@@ -25,7 +25,7 @@ const ContactScreen = () => {
                 bg={'var(--Background)'}
                 width={'100vw'} minH={{base:'100vh',lg:'100vh'}}
                 className="Ojuju"  px={{base:'1rem',lg:'6em'}}
-                py={{base:'5rem', lg:'6rem'}} gap={'24px'}
+                py={{base:'5rem', lg:'6rem'}} gap={'16px'}
             >
                 <Flex w="100%" 
                     alignItems="center" justifyContent="space-between"
