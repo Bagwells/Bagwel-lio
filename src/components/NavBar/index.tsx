@@ -12,13 +12,11 @@ import {
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { BsTwitter } from "react-icons/bs";
+import { BsGrid, BsTwitter } from "react-icons/bs";
 import { FiLinkedin } from "react-icons/fi";
 import { VscGithub } from "react-icons/vsc";
-import { CgMenuHotdog } from "react-icons/cg";
 import { TbSmartHome, TbWorldCode } from "react-icons/tb";
 import { GrContactInfo } from "react-icons/gr";
-import { IoMdCodeWorking } from "react-icons/io";
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa6";
 import { SiBattledotnet } from "react-icons/si";
@@ -92,7 +90,6 @@ const NavBar = (Background:any) => {
           alignItems="center"
           justifyContent={"space-between"}
           fontWeight={200}
-          
         >
           <Link href="/">
             <Box display={'flex'} alignItems={'center'} gap={'4px'}>
@@ -154,13 +151,15 @@ const NavBar = (Background:any) => {
           </Link>
         </Box>
 
+        <Flex display={{base:'hidden', lg:'flex'}}/>
+
         <Box
           display={{ base: "block", lg: "none" }}
           cursor={"pointer"}
           ref={btnRef}
           onClick={onOpen}
         >
-          <CgMenuHotdog size={"32px"} />
+          <BsGrid size={"32px"} />
         </Box>
 
         <Drawer
@@ -188,7 +187,7 @@ const NavBar = (Background:any) => {
             />
 
             <DrawerBody>
-              <Flex w={'100%'} justifyContent={'center'} textColor={'var(--secColor)'} fontSize={'48px'} my={'1rem'}>
+              <Flex w={'100%'} justifyContent={'center'} textColor={'var(--secColor)'} fontSize={'48px'} my={'3rem'}>
                 <SiBattledotnet/>
               </Flex>
               <Box w={'100%'}

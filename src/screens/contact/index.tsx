@@ -23,7 +23,7 @@ const ContactScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} minH={{base:'100vh',lg:'100vh'}}
+                width={'100vw'} minH={{base:'100svh',lg:'100vh'}}
                 className="Ojuju"  px={{base:'1rem',lg:'6em'}}
                 py={{base:'5rem', lg:'6rem'}} gap={'16px'}
             >
