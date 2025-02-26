@@ -85,7 +85,7 @@ const HomeScreen = () => {
         <>
             <Box 
                 bg={'var(--Background)'}
-                width={'100vw'} h={'100vh'}
+                width={'100vw'} h={{base:'100svh', lg:'100vh'}}
                 className="Ojuju"
             >
                 <Flex display={`${display ? "none" : "flex"}`}>

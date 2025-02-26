@@ -66,7 +66,7 @@ const WorkScreen = () => {
             <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
-                width={'100vw'} height={{base:'100vh',lg:'100vh'}}
+                width={'100vw'} height={{base:'100svh',lg:'100vh'}}
                 className="Ojuju"  p={{base:'1rem',lg:'8em'}}
                 py={{base:'5rem',lg:'6rem'}} gap={'12px'}
             >
