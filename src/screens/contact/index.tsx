@@ -1,4 +1,5 @@
-import NavBar from "@/components/NavBar"
+
+import { useDetails } from "@/hook/profile"
 import { Box, Center, Flex, Link, Text } from "@chakra-ui/react"
 import Image from "next/image"
 import { FaDiscord, FaLinkedin, FaSquareGithub, FaSquareXTwitter, FaXTwitter } from "react-icons/fa6"
@@ -10,17 +11,12 @@ import { TbSocial } from "react-icons/tb"
 
 
 const ContactScreen = () => {
-    const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
-    const X = "https://x.com/dashingtimmy?s=21";
-    const Github = "https://www.github.com/bagwells";
-    const Discord = "";
+    const {X, LinkedIn, Discord, Github, email } = useDetails();
 
-    const email = "mailto:timmyayomidebagwells@outlook.com";
     const codes = "{codes}";
 
     return ( 
         <>
-            <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
                 width={'100vw'} minH={{base:'100svh',lg:'100vh'}}
