@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/navBar";
 import { Box, Circle, Flex, Link, Text } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa6";
 import { SiDailydotdev } from "react-icons/si";
@@ -6,10 +6,12 @@ import { GrOptimize } from "react-icons/gr";
 import { SiSpeedtest } from "react-icons/si";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import Image from "next/image";
+import { useDetails } from "@/hook/profile";
 
 const WorkScreen = () => {
 
-    const Github = "https://www.github.com/bagwells";
+    const {Github } = useDetails();
+
 
     const work = [
         {
@@ -28,7 +30,7 @@ const WorkScreen = () => {
             id:3,
             Title:'e-Swift',
             picture:'/eSwift.png',
-            open:'https://e-swiftproperties.ng/'
+            open:'https://www.eswiftpropertymart.ng/'
         },
         {
             id:4,
@@ -63,7 +65,6 @@ const WorkScreen = () => {
     ]
     return ( 
         <>
-            <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
                 width={'100vw'} height={{base:'100svh',lg:'100vh'}}

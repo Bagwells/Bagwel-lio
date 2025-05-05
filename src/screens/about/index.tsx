@@ -1,5 +1,5 @@
 "use client"
-import NavBar from "@/components/NavBar";
+import { useDetails } from "@/hook/profile";
 import { Box, Button, Flex, Link,Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaLinkedin } from "react-icons/fa6";
@@ -82,12 +82,11 @@ const AboutScreen = () => {
         document.body.appendChild(link);
         link.click();
     }
-    
-    const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
+    const {LinkedIn } = useDetails();
+
     
     return ( 
         <>
-            <NavBar/>
             <Box display={'flex'} flexDir={'column'}
                 bg={'var(--Background)'}
                 width={'100vw'} minH={{base:'', xl:'100vh'}}

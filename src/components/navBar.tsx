@@ -21,13 +21,11 @@ import Link from "next/link";
 import { FaDiscord } from "react-icons/fa6";
 import { SiBattledotnet } from "react-icons/si";
 import { MdInventory, MdWorkspacesFilled } from "react-icons/md";
+import { useDetails } from "@/hook/profile";
 
 const NavBar = (Background:any) => {
-  const LinkedIn = "https://www.linkedin.com/in/timilehin-ogedengbe-bb6a3013a/";
-  const X = "https://x.com/dashingtimmy?s=21";
-  const Github = "https://www.github.com/bagwells";
-  const Discord = "https://www.discord.com/users/873643509314363443";
-
+  
+  const {X, LinkedIn, Discord, Github } = useDetails();
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<any>();
