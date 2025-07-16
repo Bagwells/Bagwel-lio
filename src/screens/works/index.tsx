@@ -15,49 +15,56 @@ const WorkScreen = () => {
 
     const work = [
         {
-            id:1,
+            Title:'BlueBlossom',
+            picture:'/Blueblossom.png',
+            open:'https://blueblossom.stanbicibtc.com'
+        },
+        {
+            Title:'SIC',
+            picture:'/SIC.png',
+            open:'https://sic.tokenpage.xyz'
+        },
+        {
             Title:'Coverai',
             picture:'/Coverai.png',
             open:'https://coverai.co'
         },
         {
-            id:2,
             Title:'PocketFood',
             picture:'/pocketfood.png',
             open:'https://pocketfood.io'
         },
         {
-            id:3,
             Title:'e-Swift',
             picture:'/eSwift.png',
             open:'https://www.eswiftpropertymart.ng/'
         },
         {
-            id:4,
+            Title:'Desolatravels',
+            picture:'/Desola.png',
+            open:''
+        },
+        {
             Title:'WMTA!',
             picture:'/WMTA.png',
             open:'https://beta.whomadethisartwork.com/'
         },
         {
-            id:5,
             Title:'Casa Central',
             picture:'/Casa-central.png',
             open:'https://casacentral.cc'
         },
         {
-            id:6,
             Title:'Aton',
             picture:'/Aton.png',
             open:'https://aton-pre.vercel.app/'
         },
         {
-            id:7,
             Title:'SkillBit',
             picture:'/Skillbit.png',
             open:'https://skillbit-mkt6.vercel.app/'
         },
         {
-            id:8,
             Title:'eChannel-Class',
             picture:'/Channel-class.png',
             open:''
@@ -88,9 +95,9 @@ const WorkScreen = () => {
                     <Box display={{base:'',xl:'none'}} position={"relative"} w={"100%"} h={'calc(80vh - 100px)'} gap={"12px"} 
                         overflow={'auto'} borderTop={'2px solid var(--TextCol)'} borderBottom={'2px solid var(--TextCol)'}
                     >   
-                        { work?.map((entry)=>(
+                        { work?.map((entry, index)=>(
                             <Box position={'relative'} display={'flex'}
-                                key={entry?.id} border={'2px solid var(--secColor)'} borderRadius={'12px'}
+                                key={index} border={'2px solid var(--secColor)'} borderRadius={'12px'}
                                 w={'100%'} my={'1em'} overflow={'clip'} h={'280px'}
                             >
                                 <img src={`${entry?.picture}`} alt="" className="work"/>
@@ -121,8 +128,8 @@ const WorkScreen = () => {
                         gap={'16px'}
                         px={'1em'}
                     >
-                        {   work?.map((entry)=>(
-                                <Box key={entry?.id}
+                        {   work?.map((entry, index)=>(
+                                <Box key={index}
                                     bgImage={entry?.picture} bgSize={'cover'} bgPos={'center'} 
                                     border={'2px solid var(--TextCol)'} borderRadius={'12px'}
                                     className="Lato card" overflow={'hidden'}
