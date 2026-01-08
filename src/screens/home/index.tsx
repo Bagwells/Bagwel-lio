@@ -37,10 +37,15 @@ const HomeScreen = () => {
         },3000)
     },[])
 
+    const socials = [
+        {title: 'Github', link: Github, icon: FaSquareGithub},
+        {title: 'X', link: X, icon: FaSquareXTwitter},
+        {title: 'LinkedIn', link: LinkedIn, icon: FaLinkedin},
+        {title: 'Discord', link: Discord, icon: FaDiscord},
+    ]
   
 
-
-    return ( 
+    return (
         <>
             <Box 
                 bg={'var(--Background)'}
@@ -67,7 +72,17 @@ const HomeScreen = () => {
                             <Flex alignItems={'center'}
                                 gap={'10px'} zIndex={50}
                             >
-                                <Link href={Github}>
+                                {
+                                    socials.map((social, index) => {
+                                        const Icon = social.icon;
+                                        return(
+                                        <Link key={index} href={social.link}>
+                                            <Icon className={`${activate ? "icon ":"unIcon"} rotateback`}/>
+                                        </Link>
+                                    )})
+                                }
+
+                                {/* <Link href={Github}>
                                     <FaSquareGithub className={`${activate ? "icon ":"unIcon"} rotateback`}/>
                                 </Link>
                                 <Link href={X}>
@@ -78,7 +93,7 @@ const HomeScreen = () => {
                                 </Link>
                                 <Link href={Discord}>
                                     <FaDiscord className={`${activate ? "icon ":"unIcon"} rotateback`}/>
-                                </Link>
+                                </Link> */}
                             </Flex>
                         </Flex>
 
@@ -109,32 +124,20 @@ const HomeScreen = () => {
                                         fontSize={{base:'36px', xl:'72px'}}
                                         fontWeight={700}
                                         color={'var(--secColor)'}
-                                        textAlign={'center'}
                                     >
-                                        {/* <Text as="span"
-                                            fontSize={{base:'24px',xl:'48px'}}
-                                            color="var(--TextCol)"
-                                            className="Lato"
-                                        >
-                                            {text}
-                                        </Text> */}
-                                            Bagwells
-                                        {/* <Text as="span"
-                                            fontSize={{base:'24px',xl:'48px'}}
-                                            color="var(--TextCol)"
-                                            className="Lato"
-                                        >
-                                            {text2}
-                                        </Text> */}
+                                         Bagwells
                                     </Text>
                                     <Text fontSize={{base:'24px',xl:'32px'}} fontWeight={400} color={'var(--TextCol)'}
                                         className="Lato"
                                     >
                                         a 
                                         <Text as="span" color={'var(--secColor)'} fontWeight={600} fontSize={{base:'30px',xl:'36px'}} px={'4px'}>
-                                            Front-End
+                                            Software developer
                                         </Text>
-                                        developer
+                                        and 
+                                        <Text as="span" color={'var(--secColor)'} fontWeight={600} fontSize={{base:'30px',xl:'36px'}} px={'4px'}>
+                                            AI Automation enthusiast
+                                        </Text>
                                     </Text>
                                 </Flex>
                                 <Link href={'/inventory'}>
