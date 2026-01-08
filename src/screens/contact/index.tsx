@@ -70,13 +70,13 @@ const ContactScreen = () => {
                                 <Text fontSize={{base:'18px',lg:'28px'}}  color={'var(--TextCol2)'}
                                     className="Lato" fontWeight={600}   
                                 >
-                                   a <Text as="span" color={'var(--secColor)'} fontSize={{base:'20px',lg:'28px'}} fontWeight={700}>Front-end</Text> Developer
+                                   a <Text as="span" color={'var(--secColor)'} fontSize={{base:'20px',lg:'28px'}} fontWeight={700}>Software</Text> Developer
                                 </Text>
                             </Flex>
                             <Text fontSize={{base:'16px',lg:'24px'}}  color={'var(--TextCol)'}
-                                    className="Lato" fontWeight={600}   
+                                className="Lato" fontWeight={600}   
                             >
-                                Turning your ideas <Text as="span" color={'var(--secColor)'}>(designs)</Text> into a reality <Text as='span' color={'var(--secColor)'} > {codes}</Text>
+                                Turning your ideas <Text as="span" color={'var(--secColor)'}>(designs)</Text> into a reality <Text as='span' color={'var(--secColor)'} > (codes)</Text>
                             </Text>
                             <Flex alignItems="center" gap={'12px'} mt={'8px'}>
                                 <Link href={Github} target="_blank" rel="noreferrer noopener">

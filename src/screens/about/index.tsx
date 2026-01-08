@@ -20,58 +20,65 @@ const AboutScreen = () => {
     const XP = [
         {
             id: 1,
-            skill:'HTML',
+            skill:'HTML/CSS',
             translate:"hundred",
             value: 100
         },
         {
-            id: 2,
-            skill:'CSS',
-            translate:"hundred",
-            value:100
-        },
-        {
-            id:3,
+            id:2,
             skill:'JavaScript',
             translate:"ninety",
             value: 90
         },
         {
-            id:4,
+            id:3,
             skill:'TypeScript',
             translate:"eighty",
             value: 80
         },
         {
-            id: 5,
-            skill:'React/Next',
+            id: 4,
+            skill:'React',
             translate:"eighty",
             value:80
         },
         {
+            id: 5,
+            skill: 'NextJs',
+            translate:"seventy",
+            value:80
+        },
+        {
             id: 6,
-            skill:'Vue',
+            skill:'Python',
             translate:"forty",
             value:40
         },
         {
             id: 7,
-            skill:'React Native',
+            skill:'NodeJs',
             translate:"fifty",
             value:50
         },
         {
             id: 8,
-            skill:'Figma',
+            skill:'Git & GitHub',
             translate:"eighty",
             value:70
         },
         {
             id: 9,
-            skill:'??',
-            translate:"translateBack",
-            value:0
+            skill:'Figma',
+            translate:"seventy",
+            value:70
         },
+        {
+            id: 10,
+            skill: '??',
+            translate:"translateBack",
+            value: 0
+        },
+
     ]
 
     const resumeDownload =()=> {
@@ -113,26 +120,7 @@ const AboutScreen = () => {
                                 textAlign={'justify'} fontWeight={500}
                                 className="Lato" color={'var(--TextCol2)'}
                             >
-                                As a creative and detail-driven Frontend developer with a quarter of decade experience
-                                I craft engaging user interfaces and seamless user experiences for web applications and 
-                                websites. With expertise in HTML, CSS, JavaScript, and various frameworks, I make your designs a reality
-                                ensure a smooth path for users. 
-                            </Text>
-                            <Text fontSize={{base:'14px',lg:'16px', xl: "20px"}}
-                                textAlign={'justify'} fontWeight={500}
-                                className="Lato" color={'var(--TextCol2)'}
-                            >
-                                Passionate about staying up-to-date with industry trends and best practices, I strive to improve my skills and deliver
-                                high quality solutions that exceeds expectations and fully adaptive to any technology and ecosystem. 
-                            </Text>
-                            <Text fontSize={{base:'14px',lg:'16px', xl:"20px"}}
-                                textAlign={'justify'} fontWeight={500}
-                                className="Lato" color={'var(--TextCol2)'}
-                            >
-                                
-                                I bring a strong work ethic and unwavering commitment to every project, ensuring timely completion and exceeding expectations. 
-                                With focus on quality, integrity, and a continuous improvement, I strive to make a meaningful impact in everything I do. 
-                                Let's achieve greatness together, one task at a time.
+                                👨‍💻 As a creative and detail-driven Frontend Developer with 4+ years of experience, I craft engaging user interfaces and seamless user experiences for web applications. I bring designs to life with pixel-perfect precision, leveraging HTML, CSS, JavaScript, TypeScript, React, and Next.js to ensure a smooth path for users 🚀. Passionate about staying up-to-date with industry trends and best practices, I strive to improve my skills and deliver high-quality solutions that exceed expectations and adapt to any technology and ecosystem. I bring a strong work ethic and unwavering commitment to every project, ensuring timely completion and exceeding expectations. With focus on quality, integrity, and continuous improvement, I strive to make a meaningful impact in everything I do. Let's achieve greatness together, one task at a time 😊.
                             </Text>
 
                             <Box display={{base:'none',lg:'flex'}}w={'100%'} alignItems={'center'} mt={'2em'}>
@@ -152,7 +140,7 @@ const AboutScreen = () => {
                             >
                                 Skills
                             </Text>
-                            <Flex flexDir={'column'} gap={'12px'}>
+                            <Flex flexDir={'column'}>
                                 {   XP.map((entry)=>(
                                     <Flex key={entry?.id}
                                         flexDir={'column'} w={'100%'} gap={'8px'} py={'6px'}
